@@ -1,1 +1,2 @@
 # Machine-Learning
+This repository contains a Machine Learning model built with Logistic Regression to predict the outcome of cricket matches. It utilizes match features such as team, venue, city, toss winner, and toss decision to determine the winning team. The project includes data preprocessing using One-Hot Encoding, model evaluation (Accuracy, Confusion Matrix), and a visualized probability chart showing each team's likelihood of winning in the test set.
