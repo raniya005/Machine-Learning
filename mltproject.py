@@ -60,7 +60,7 @@ print("\nClassification Report:")
 print(classification_report(y_test, y_pred))
 
 # -----------------------------
-# 8) World Cup Winner Probability
+# 8) Probability
 # -----------------------------
 # Get the test predictions (winners)
 test_predictions = model.predict(X_test)
@@ -88,7 +88,7 @@ print("\nCorrect WORLD CUP Winning Probability:\n")
 print(win_probability)
 
 # -----------------------------
-# 9) World Cup Winner Probability Visualization
+# 9) Visualization
 # -----------------------------
 
 # Sort probabilities for better visualization
@@ -100,9 +100,10 @@ win_probability_sorted.plot(kind='bar', color='skyblue', edgecolor='black')
 plt.title('Predicted Winning Probability per Team in Test Set Matches')
 plt.xlabel('Team')
 plt.ylabel('Winning Probability')
-plt.xticks(rotation=45, ha='right') # Rotate team names for better readability
-plt.grid(axis='y', linestyle='--', alpha=0.7) # Add a grid for easier reading of values
-plt.tight_layout() # Adjust layout to make room for the rotated x-axis labels
+plt.xticks(rotation=45, ha='right') 
+plt.grid(axis='y', linestyle='--', alpha=0.7) 
+plt.tight_layout() 
 plt.show()
+
 
 
